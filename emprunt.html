@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Formulaire d'emprunt - Bibliothèque TEK-UP">
+    <meta name="author" content="Bibliothèque TEK-UP">
+    <title>Emprunt - Bibliothèque TEK-UP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ET MENU ===== -->
+<header>
+    <div class="logo">📚 Bibliothèque TEK-UP</div>
+    <p>Votre portail vers la connaissance</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="bibliotheque.html">Accueil</a></li>
+        <li><a href="livres.html">Livres</a></li>
+        <li><a href="emprunt.html">Emprunt</a></li>
+        <li><a href="bibliotheque.html#formulaire">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ===== CONTENU PRINCIPAL ===== -->
+<div class="container">
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="main-content">
+
+        <!-- ===== PAGE TITLE ===== -->
+        <section class="page-header">
+            <h1>📝 Formulaire d'Emprunt</h1>
+            <p>Empruntez vos livres préférés en remplissant ce formulaire.</p>
+        </section>
+
+        <!-- ===== FORMULAIRE ===== -->
+        <section id="formulaire" class="formulaire">
+            <h2>📝 Informations d'Emprunt</h2>
+
+            <fieldset>
+                <legend>Informations Personnelles</legend>
+                <form>
+                    <label>Nom complet :</label>
+                    <input type="text" required>
+
+                    <label>Email :</label>
+                    <input type="email" required>
+
+                    <label>Téléphone :</label>
+                    <input type="text">
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>Détails de l'emprunt</legend>
+                <form>
+                    <label>Livre :</label>
+                    <select>
+                        <option>Homo Deus</option>
+                        <option>Le Seigneur des Anneaux</option>
+                        <option>L'IA Révolution</option>
+                        <option>Le Jardin des Ombres</option>
+                        <option>Napoléon : L'Homme et la Légende</option>
+                        <option>Les Aventures de Léo</option>
+                    </select>
+
+                    <label>Date d'emprunt :</label>
+                    <input type="date">
+
+                    <label>Date de retour :</label>
+                    <input type="date">
+
+                    <input type="submit" value="Soumettre">
+                </form>
+            </fieldset>
+        </section>
+    </div>
+
+    <!-- ===== SIDEBAR ===== -->
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>&copy; 2024 Bibliothèque TEK-UP</p>
+</footer>
+
+</body>
+</html>

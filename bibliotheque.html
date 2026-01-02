@@ -18,10 +18,9 @@
 <nav>
     <ul>
         <li><a href="bibliotheque.html">Accueil</a></li>
-        <li><a href="#livres">Livres</a></li>
-        <li><a href="#categories">Catégories</a></li>
-        <li><a href="#nouveautes">Nouveautés</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="livres.html">Livres</a></li>
+        <li><a href="emprunt.html">Emprunt</a></li>
+        <li><a href="#formulaire">Contact</a></li>
     </ul>
 </nav>
 
@@ -32,16 +31,51 @@
     <div class="main-content">
 
         <!-- ===== CATEGORIES ===== -->
+
+     
+
+
         <section id="categories" class="categories">
             <h2>📚 Catégories</h2>
             <ul>
-                <li><strong>Romance / Feel-Good / Romans sentimentaux</strong><br>Histoires d'amour passionnantes et émouvantes.</li>
-                <li><strong>Science-fiction & Fantastique / Fantasy</strong><br>Mondes imaginaires, univers épiques et aventures extraordinaires.</li>
-                <li><strong>Histoire</strong><br>Récits historiques captivants permettant d’explorer le passé.</li>
-                <li><strong>Polar / Thriller / Roman policier / Suspense</strong><br>Intrigues mystérieuses, enquêtes et suspense haletant.</li>
-                <li><strong>Classique / Littérature générale</strong><br>Grandes œuvres intemporelles de la littérature mondiale.</li>
+                <section class="page-header">
+                    <a href="categories/romance/romance.html">
+                        <h1>💕 Romance</h1>
+                        <p><strong>Romance / Feel-Good / Romans sentimentaux</strong><br>Histoires d'amour passionnantes et émouvantes.</p>
+                    </a>
+                </section>
+                <section class="page-header">
+                    <a href="categories/fantasy-aventure/fantasy-list.html">
+                        <h1>🧙‍♂️ Fantasy & Aventure</h1>
+                        <p><strong>Science-fiction & Fantastique / Fantasy</strong><br>Mondes imaginaires, univers épiques et aventures extraordinaires.</p>
+                    </a>
+                </section>
+                <section class="page-header">
+                    <a href="categories/histoire/histoire.html">
+                        <h1>📜 Histoire</h1>
+                        <p><strong>Histoire</strong><br>Récits historiques captivants permettant d'explorer le passé.</p>
+                    </a>
+                </section>
+                <section class="page-header">
+                    <a href="categories/thriller/thriller-list.html">
+                        <h1>🔍 Thriller</h1>
+                        <p><strong>Polar / Thriller / Roman policier / Suspense</strong><br>Intrigues mystérieuses, enquêtes et suspense haletant.</p>
+                    </a>
+                </section>
+                <section class="page-header">
+                    <a href="categories/classique/classique-list.html">
+                        <h1>📖 Littérature Classique</h1>
+                        <p><strong>Classique / Littérature générale</strong><br>Grandes œuvres intemporelles de la littérature mondiale.</p>
+                    </a>
+                </section>
+                
+              <!--    <li><a href="categories/romance/romance.html"><strong>Romance / Feel-Good / Romans sentimentaux</strong><br>Histoires d'amour passionnantes et émouvantes.</a></li>
+                <li><a href="categories/fantasy-aventure/fantasy-list.html"><strong>Science-fiction & Fantastique / Fantasy</strong><br>Mondes imaginaires, univers épiques et aventures extraordinaires.</a></li>
+                <li><a href="categories/histoire/histoire.html"><strong>Histoire</strong><br>Récits historiques captivants permettant d'explorer le passé.</a></li>
+                <li><a href="categories/thriller/thriller-list.html"><strong>Polar / Thriller / Roman policier / Suspense</strong><br>Intrigues mystérieuses, enquêtes et suspense haletant.</a></li>
+                <li><a href="categories/classique/classique-list.html"><strong>Classique / Littérature générale</strong><br>Grandes œuvres intemporelles de la littérature mondiale.</a></li>
             </ul>
-        </section>
+        </section>-->
 
         <!-- ===== TABLE DES LIVRES ===== -->
         <section id="livres" class="livres">
@@ -94,10 +128,10 @@
 
         <!-- ===== FORMULAIRE ===== -->
         <section id="formulaire" class="formulaire">
-            <h2>📝 Formulaire d'Emprunt</h2>
+            <h2>📞 Contactez-nous</h2>
 
             <fieldset>
-                <legend>Informations Personnelles</legend>
+                <legend>Informations de Contact</legend>
                 <form>
                     <label>Nom complet :</label>
                     <input type="text" required>
@@ -106,30 +140,26 @@
                     <input type="email" required>
 
                     <label>Téléphone :</label>
-                    <input type="text">
+                    <input type="tel">
                 </form>
             </fieldset>
 
             <fieldset>
-                <legend>Détails de l'emprunt</legend>
+                <legend>Message</legend>
                 <form>
-                    <label>Livre :</label>
+                    <label>Sujet :</label>
                     <select>
-                        <option>Homo Deus</option>
-                        <option>Le Seigneur des Anneaux</option>
-                        <option>L'IA Révolution</option>
-                        <option>Le Jardin des Ombres</option>
-                        <option>Napoléon : L’Homme et la Légende</option>
-                        <option>Les Aventures de Léo</option>
+                        <option>Demande d'information générale</option>
+                        <option>Problème technique</option>
+                        <option>Suggestion d'amélioration</option>
+                        <option>Signalement d'un problème</option>
+                        <option>Autre</option>
                     </select>
 
-                    <label>Date d'emprunt :</label>
-                    <input type="date">
+                    <label>Message :</label>
+                    <textarea rows="5" placeholder="Votre message..." required></textarea>
 
-                    <label>Date de retour :</label>
-                    <input type="date">
-
-                    <input type="submit" value="Soumettre">
+                    <input type="submit" value="Envoyer">
                 </form>
             </fieldset>
         </section>
@@ -145,7 +175,7 @@
         <div class="livre-titre">Homo Deus</div>
         <div class="livre-auteur">Yuval Noah Harari</div>
         <p>Une exploration fascinante des futurs possibles de l’humanité et des défis technologiques.</p>
-        <a href="homo-deus.html" class="btn-voir-plus">Voir plus</a>
+        <a href="./Nouveautes/homo-deus.html" class="btn-voir-plus">Voir plus</a>
     </div>
 
     <div class="livre-item">
@@ -153,7 +183,7 @@
         <div class="livre-titre">Le Seigneur des Anneaux</div>
         <div class="livre-auteur">J.R.R. Tolkien</div>
         <p>Un monde épique rempli de quêtes, de créatures mythiques et de batailles légendaires.</p>
-        <a href="le-seigneur-des-anneaux.html" class="btn-voir-plus">Voir plus</a>
+        <a href="./Nouveautes/le-seigneur-des-anneaux.html" class="btn-voir-plus">Voir plus</a>
     </div>
 
     <div class="livre-item">
@@ -161,7 +191,7 @@
         <div class="livre-titre">L'IA Révolution</div>
         <div class="livre-auteur">Alice Dupont</div>
         <p>Comment l’intelligence artificielle transforme notre monde et nos métiers.</p>
-        <a href="ia-revolution.html" class="btn-voir-plus">Voir plus</a>
+        <a href="./Nouveautes/ia-revolution.html" class="btn-voir-plus">Voir plus</a>
     </div>
 
     <div class="livre-item">
@@ -169,7 +199,7 @@
         <div class="livre-titre">Le Jardin des Ombres</div>
         <div class="livre-auteur">Marie Dubois</div>
         <p>Secrets familiaux et mystères du passé dans une intrigue captivante.</p>
-        <a href="le-jardin-des-ombres.html" class="btn-voir-plus">Voir plus</a>
+        <a href="./Nouveautes/le-jardin-des-ombres.html" class="btn-voir-plus">Voir plus</a>
     </div>
 </section>
 
